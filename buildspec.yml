@@ -5,9 +5,11 @@ phases:
   pre_build:
     commands:
     - echo "Entered the pre-build phase"
+    - echo "Pre Build is to happen here"
   build:
     commands:
     - echo "Entered build phase"
+    - echo "build is happenning here ... wonder what that is now .. Awwh .. !!"
     - mvn clean prepare-package war:exploded
   post_build:
     commands:
